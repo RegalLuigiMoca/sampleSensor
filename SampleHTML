@@ -3,7 +3,13 @@
     <head>
         <title>Sample Page</title>
     </head>
+    <script>
+        function ChangeHeader()
+        {
+            document.getElementById("header").value = "CrossCode";
+        }
+    </script>
 <body>
-    <h2> Hi! </h2>
+    <h2 id="header" onload="ChangeHeader()">Hi!</h2>
 </body>
 </html>
