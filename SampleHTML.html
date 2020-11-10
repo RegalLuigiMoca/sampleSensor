@@ -1,32 +1,27 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <link rel="stylesheet" href="DarklyBootstrap.css">
         <title>Sample Page</title>
+        <script src="JavaScript/sampleJavaScript.js"></script>
     </head>
-    <script src="JavaScript/sampleJavaScript.js"></script>
-<body onload="ChangeHeader()">
-    <h2 id="header">Hi!</h2>
-    <label>This Snowy Owl Team is Awesome!</label>
-    <br>
-    
-    <table>
-        <tr>
-            <td>
-                Connor
-            </td>
-            <td>
-                Paul
-            </td>
-            <td>
-                Luigi
-            </td>
-            <td>
-                Harish
-            </td>
-            <td>
-                Kyle
-            </td>
-        </tr>
-    </table>
-</body>
+
+    <body onload="OnLoadEvents()">
+        <center>
+            <br>
+                <h1 id="header">Hi!</h1>
+                <p class="lead">This Snowy Owl Team is Awesome!</p>
+                <table>
+                    <tr>
+                        <td>Connor</td>
+                        <td>Paul</td>
+                        <td>Luigi</td>
+                        <td>Harish</td>
+                        <td onmouseover="OweMeChipotle();" onmouseleave="GoAway();">Kyle</td>
+                    </tr>
+                </table>
+                <small>Kyle still owes Luigi <b style="color:red">Chipotle</b></small>
+                <h1 id="kyle" style="font-size: 64px;"><b style="color:red">GET ME CHIPOTLE, </b>KYLE</h1>
+        </center>
+    </body>
 </html>
