@@ -25,6 +25,7 @@ function GoAway()
 {
     document.getElementById("kyle").style.visibility = "hidden";
 }
+
 /*
 *   Function outputs the results from the user input.
 */
