@@ -25,3 +25,27 @@ function GoAway()
 {
     document.getElementById("kyle").style.visibility = "hidden";
 }
+/*
+*   Function outputs the results from the user input.
+*/
+function results()
+{
+    let results = document.getElementById("results");
+    let uA = document.getElementsByName("userAnswer");
+    let answer = "";
+
+    for(i = 0; i < uA.length; i++)
+        if(uA[i].checked) answer = uA[i].value;
+
+    switch(answer)
+    {
+        case "yes": results.innerHTML = "You freakin' right!";
+        break;
+
+        case "no": results.innerHTML = "You are absolutely wrong & you owe me Chipotle too!";
+        break;
+        
+        default: results.innerHTML = "";
+        break;
+    }
+}

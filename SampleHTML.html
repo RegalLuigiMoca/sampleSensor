@@ -22,6 +22,23 @@
                 </table>
                 <small>Kyle still owes Luigi <b style="color:red">Chipotle</b></small>
                 <h1 id="kyle" style="font-size: 64px;"><b style="color:red">GET ME CHIPOTLE, </b>KYLE</h1>
-        </center>
+            </center>
+
+            <div style="text-align: center;">
+                <h1>Here is a Pop Quiz:</h1>
+                <h3>Does Kyle owe me Chipotle?</h3>
+
+                <div class="custom-control custom-radio" style="position: relative; left: -130px;">
+                    <input type="radio" class="custom-control-input" id="radio1" name="userAnswer" value="yes" onclick="results()">
+                    <label class="custom-control-label" for="radio1">Absolutely, he does! He's overdue!</label>
+                </div>
+
+                <div class="custom-control custom-radio" style="position: relative;">
+                    <input type="radio" class="custom-control-input" id="radio2" name="userAnswer" value="no" onclick="results()">
+                    <label class="custom-control-label" for="radio2">Letter before Z, Y does he owe you Chipotle? What you talking about man?</label>
+                </div>
+                <br>
+                <h2 id="results"></h2>
+            </div>
     </body>
 </html>
